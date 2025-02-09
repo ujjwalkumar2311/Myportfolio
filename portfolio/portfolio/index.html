@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/fb07274c7c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <nav>
+        <img src="images.png" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>
+          Hi, I'm <span>Ujjwal</span><br />
+          kumar From India
+        </h1>
+      </div>
+      <img class="mainLogo" src="./mainlogo.jpg" alt="" />
+    </div>
+
+    <!-- ---------------------------ABOUT------------------------------------------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="about.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello! I'm Ujjwal, a passionate college student diving headfirst into the world of web development. Aspiring to be at the forefront of technological innovation, I am on a thrilling journey of learning, growth, and creating compelling digital experiences.
+              My fascination with web development sparked during my college years.I specialize in a range of web technologies, including HTML, CSS, JavaScript, and frameworks like React and Node.js. 
+            </p>
+           
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/ios apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022 -current</span><br />Active member @ GDSC,NSS,Leader club.
+                
+                </li>
+                <li><span>2020-22</span><br />President  at RMPS.</li>
+                <li><span>2019-20</span><br />Captain of House at RMPS.</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2022-26</span><br />Currently doing B.tech in CS.</li>
+                <li><span>2020-22</span><br />Intermediate from C.B.S.E Public School.</li>
+                <li><span>2019-20</span><br />matriculation from C.B.S.E Public School.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------------services-------------------------------------------- -->
+
+    <div id="services">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p class="service-content">
+            I specialize in creating web designs that seamlessly blend form and function, ensuring a captivating user journey.
+            I believe in designing with empathy, understanding the users' needs, and crafting solutions that not only look appealing but resonate with their expectations and preferences.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>UI/UX Design</h2>
+          <p class="service-content">
+            As a UI/UX designer, I specialize in creating seamless and delightful digital experiences that harmonize aesthetic appeal with intuitive functionality.I believe that exceptional UI/UX design is a marriage of art and science. It's about understanding users, empathizing with their needs, and employing design principles to create solutions that simplify and enrich their journey.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h2>App Design</h2>
+          <p class="service-content">
+            I specialize in creating visually captivating and user-centric mobile applications that make a lasting impression.
+            In the realm of app design, a seamless and engaging user experience is paramount. My approach is rooted in human-centered design, ensuring every element I create aligns with the users' desires and behaviors, resulting in intuitive and delightful interactions.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------------portfolio------------------- -->
+
+    <div id="portfolio">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="work-1.png" />
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>
+              The app connects you to the talented people around the
+              world.Download it from play store.
+            </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="work-2.png" />
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>
+              The app connects you to the talented people around the
+              world.Download it from play store.
+            </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="work-3.png" />
+          <div class="layer">
+            <h3>Online Shopping App</h3>
+            <p>
+              The app connects you to the talented people around the
+              world.Download it from play store.
+            </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+
+
+    <!-- ------------------------contact------------------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact ME</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+            <p><i class="fa-solid fa-phone"></i>0123456789</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+             <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email">
+              <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg">hello</span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright &#169 ujjwal.Made with <i class="fa-solid fa-heart"></i> by Ujjwal Kumar</p>
+      </div>
+    </div>   
+    <script>
+      function opentab(tabId) {
+        // Hide all tab contents
+        const tabContents = document.querySelectorAll(".tab-contents");
+        tabContents.forEach((tab) => tab.classList.remove("active-tab"));
+
+        // Show the selected tab content
+        const selectedTab = document.getElementById(tabId);
+        selectedTab.classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu= document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxHoSf7gUQmLzSeZr2U2ZwQiI9UqBwVXlph_G-321tXOwLiYyPPmudDRy-l8ICgS4I4/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg =document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      msg.innerHTML ="Message sent successfully"
+      setTimeout(function(){
+        msg.innerHTML =""
+      },5000)
+      form.reset()
+    })
+    .catch(error => console.error('Error!', error.message));
+});
+
+</script>
+  </body>
+</html>
